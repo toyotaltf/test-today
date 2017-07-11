@@ -1,0 +1,224 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>消息发布</title>
+<link rel="stylesheet" type="text/css" href="../css/css.css">
+</head>
+
+<body>
+<div class="boxs">
+<div class="ym2">
+<div class="top">
+欢迎您，管理员 所属机构：治安总队
+</div>
+<div class="top_gn">
+<div class="tuichu">
+  <a href="#">退出</a> </div>
+<div class="xiaoxi">
+  <a href="bjyj_tzgg0.html">消息(10)</a> </div>
+</div>
+</div>
+<div class="bq">
+<div class="sy">
+<a href="../index.html">首页</a>
+</div>
+
+<div class="bq2_select">
+<a href="xxlist.html">公告发布</a><div></div>
+</div>
+</div>
+<div class="bt"><span>查询条件</span></div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table6">
+  <tbody>
+
+
+    <tr>
+      <td width="10%" class="lsbg" >公告名称</td>
+      <td width="90%" colspan="5" ><input type="text" size="100" placeholder="关于加强社会治安数据的采集工作的通知"></td>
+    </tr>
+
+
+
+    <tr>
+      <td class="lsbg" >发送人部门</td>
+
+      <td><select>
+<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--选择--&nbsp;</option>
+                    <option>&nbsp;&nbsp;治安总队1处室&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option>&nbsp;&nbsp;治安总队2处室&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option>&nbsp;&nbsp;治安总队3处室&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option>&nbsp;&nbsp;治安总队4处室&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option>&nbsp;&nbsp;治安总队5处室&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option>&nbsp;&nbsp;治安总队6处室&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option>&nbsp;&nbsp;治安总队7处室&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option>&nbsp;&nbsp;治安总队8处室&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option>&nbsp;&nbsp;治安总队9处室&nbsp;&nbsp;&nbsp;&nbsp;</option>
+</select>
+     </td>
+
+
+
+      <td class="lsbg">发送人姓名</td>
+      <td><select>
+                  <option>&nbsp;&nbsp;--选择--&nbsp;&nbsp;&nbsp;</option>
+                  <option>&nbsp;&nbsp;李一罗&nbsp;&nbsp;&nbsp;</option>
+                  <option>&nbsp;&nbsp;张三&nbsp;&nbsp;&nbsp;</option>
+                  <option>&nbsp;&nbsp;李四&nbsp;&nbsp;&nbsp;</option>
+                  <option>&nbsp;&nbsp;王五&nbsp;&nbsp;&nbsp;</option>
+</select></td>
+      <td class="lsbg">预约发送时间</td>
+      <td><input type="datetime-local"></td>
+    </tr>
+
+    <tr>
+      <td height="100" class="lsbg">公告内容</td>
+     <td colspan="5" class="wenben">
+     <textarea  wrap="virtual"   style="width: 100%;word-break:break-all" rows="11" placeholder="正文..."></textarea>
+   </td>
+    </tr>
+
+<tr>
+      <td class="lsbg">发送至部门</td>
+<td width="90%" colspan="5" >
+
+<input type="checkbox" name="checkDepartmentAll" id="checkDepartmentAll" onclick="checkAll();">全选&nbsp;&nbsp;
+<input type="checkbox" name="checkDepartment" onclick="uncheckAll();">东城派出所&nbsp;&nbsp;
+<input type="checkbox" name="checkDepartment" onclick="uncheckAll();">南城派出所&nbsp;&nbsp;
+<input type="checkbox" name="checkDepartment" onclick="uncheckAll();">西城派出所&nbsp;&nbsp;
+<input type="checkbox" name="checkDepartment" onclick="uncheckAll();">北城派出所&nbsp;&nbsp;
+</div>
+</td>
+</tr>
+
+
+<tr>
+<td class="lsbg">发送至角色</td>
+<td width="90%" colspan="5" >
+
+<input type="checkbox" name="checkRoleAll" id="checkRoleAll" onclick="checkAll();">全选&nbsp;&nbsp;
+<input type="checkbox" name="checkRole" onclick="uncheckAll();">派出所所长&nbsp;&nbsp;
+<input type="checkbox" name="checkRole" onclick="uncheckAll();">派出所副所长&nbsp;&nbsp;
+<input type="checkbox" name="checkRole" onclick="uncheckAll();">治安民警&nbsp;&nbsp;
+<input type="checkbox" name="checkRole" onclick="uncheckAll();">内勤民警&nbsp;&nbsp;
+<input type="checkbox" name="checkRole" onclick="uncheckAll();">巡逻民警&nbsp;&nbsp;
+<input type="checkbox" name="checkRole" onclick="uncheckAll();">网络民警&nbsp;&nbsp;
+<input type="checkbox" name="checkRole" onclick="uncheckAll();">社区民警&nbsp;&nbsp;
+
+
+
+</td>
+
+</tr>
+
+
+
+
+
+  </tbody>
+</table>
+
+
+<div class="anniu">
+  <input type="submit" value="保存" onclick="liShowConfirm();"><a href="xxlist.html"><input type="submit" value="取消"></a>
+</div>
+
+
+</div>
+</body>
+
+
+
+
+
+<script type="text/javascript">
+
+  function liShowConfirm() {
+          alert("提交成功!");
+          }
+
+
+
+init();
+function init(){
+document.getElementById("department01").style.display="none";
+document.getElementById("role01").style.display="none";
+}
+function showDepartment(){
+  document.getElementById("department01").style.display="";
+}
+function showRole(){
+  document.getElementById("role01").style.display="";
+}
+function hideChild(){
+document.getElementById("department01").style.display="none";
+document.getElementById("role01").style.display="none";
+}
+
+
+// function a001(){
+//       var b=document.getElementById("department01");
+//           b.onfocus==true;
+// }
+
+// object.onfocus=function(){SomeJavaScriptCode}
+// onMouseOut="hideChild();"
+
+//全选和取消全选
+function checkAll(){
+ var checkCtiyList = document.getElementsByName ("checkDepartment");
+ var checkRoleList = document.getElementsByName ("checkRole");
+ if(checkCtiyList.length!=0){
+  if(document.getElementById("checkDepartmentAll").checked){
+     for(var i=0;i<checkCtiyList.length;i++){
+        checkCtiyList[i].checked = 1;
+     } 
+   }else{
+    for(var j=0;j<checkCtiyList.length;j++){
+       checkCtiyList[j].checked = 0;
+    }
+   }
+ }
+  if(checkRoleList.length!=0){
+ if(document.getElementById("checkRoleAll").checked){
+     for(var i=0;i<checkRoleList.length;i++){
+        checkRoleList[i].checked = 1;
+     } 
+   }else{
+    for(var j=0;j<checkRoleList.length;j++){
+       checkRoleList[j].checked = 0;
+    }
+   }
+ }  
+}
+
+
+
+function uncheckAll(){
+ var checkCtiyList = document.getElementsByName ("checkDepartment");
+  var checkRoleList = document.getElementsByName ("checkRole");
+ if(checkCtiyList.length!=0){
+  for(var i=0;i<checkCtiyList.length;i++){
+    if(checkCtiyList[i].checked){
+      document.getElementById("checkDepartmentAll").checked=1;
+    }else{
+      document.getElementById("checkDepartmentAll").checked=0;
+      break;
+    }
+   } 
+ }
+  if(checkRoleList.length!=0){
+ for(var i=0;i<checkRoleList.length;i++){
+    if(checkRoleList[i].checked){
+      document.getElementById("checkRoleAll").checked=1;
+    }else{
+     document.getElementById("checkRoleAll").checked=0;
+     break;
+    }
+   }
+ }
+}
+</script>
+
+
+</html>

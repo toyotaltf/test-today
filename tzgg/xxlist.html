@@ -1,0 +1,485 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>系统管理</title>
+<link rel="stylesheet" type="text/css" href="../css/css.css">
+</head>
+
+<body>
+<div class="boxs">
+<div class="ym2">
+<div class="top">
+欢迎您，管理员 所属机构：治安总队
+</div>
+<div class="top_gn">
+<div class="tuichu">
+  <a href="#">退出</a> </div>
+<div class="xiaoxi">
+  <a href="bjyj_tzgg0.html">消息(10)</a> </div>
+</div>
+</div>
+<div class="bq">
+<div class="sy">
+<a href="../index.html">首页</a>
+</div>
+
+<div class="bq2_select">
+<a href="xxlist.html">系统管理</a>
+<div></div>
+</div>
+</div>
+<div class="cxbox">
+<div class="boxleft">
+<div class="boxtb">
+<div class="hy14">消息平台</a></div>
+</div>
+</div>
+<div class="boxright">
+<div class="boxcx">
+<div class="text">
+
+<div class="bq_mr"><a href="../dxgl/mbpzlist0.html">模板配置</a></div>
+<div class="bq_dq"><a href="../tzgg/xxlist.html">公告管理</a></div>
+<div class="bq_mr"><a href="../dxgl/dxrzlist.html">短信日志</a></div>
+</div>
+
+                <div class="boxcx2" style=" z-index:9">
+                  
+                  <ul>
+                    <li>
+                      <div class="text4">发布时间</div>
+                      <input type="datetime-local" style="width:140px;">
+                      <div class="text4"> 至 </div>
+                      <input type="datetime-local" style="width:140px;">
+                    </li>
+                    <li><div class="text4">发布部门</div><select>
+                    <option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----选择----&nbsp;</option>
+                    <option>&nbsp;&nbsp;治安总队1处室&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option>&nbsp;&nbsp;治安总队2处室&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option>&nbsp;&nbsp;治安总队3处室&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option>&nbsp;&nbsp;治安总队4处室&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option>&nbsp;&nbsp;治安总队5处室&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option>&nbsp;&nbsp;治安总队6处室&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option>&nbsp;&nbsp;治安总队7处室&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option>&nbsp;&nbsp;治安总队8处室&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option>&nbsp;&nbsp;治安总队9处室&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                  </select></li>
+                  <li><div class="text4">发布人</div><select>
+                  <option>&nbsp;&nbsp;--选择--&nbsp;&nbsp;&nbsp;</option>
+                  <option>&nbsp;&nbsp;李一罗&nbsp;&nbsp;&nbsp;</option>
+                  <option>&nbsp;&nbsp;张三&nbsp;&nbsp;&nbsp;</option>
+                  <option>&nbsp;&nbsp;李四&nbsp;&nbsp;&nbsp;</option>
+                  <option>&nbsp;&nbsp;王五&nbsp;&nbsp;&nbsp;</option>
+                </select></li>
+
+                <li>
+                  <div white-space:nowrap; class="text4">检索字词</div>
+                  <input type="text" value="" style="width:150px;" placeholder="通知">
+                </li>
+
+                <li>
+
+                <input type="submit" value="查询" onclick="showHide()">
+
+                <input type="reset" value="清除"></li>
+
+              </ul>
+
+            </div>
+
+
+
+
+
+
+</div>
+</div>
+</div>
+
+
+<div class="bt"><span>公告发布信息</span>
+
+<span class="anniu2">
+  <a href="./xxfb.html"><input type="submit" value="新建公告"></a>
+</span></div>
+
+
+
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table2" id="a009">
+        <tbody>
+          <tr class="lsbg">
+            <td><b>序号</b></td>
+            <td width=150px;><b>发布时间</b></td>
+            <td width=300px;><b>公告主题</b></td>
+            <td width=140px;><b>发布部门</b></td>
+            <td><b>发布人姓名</b></td>
+            <td><b>发布账号</b></td>
+            <td><b>发布状态</b></td>
+            <td width=150px;><b>本公告短信接收情况</b></td>
+            <td><b>操作</b></td>
+          </tr>
+
+          <tr onclick="tzggxx();">
+            <td>1</td>
+            <td>2017-03-09 14:42:26</td>
+            <td>“关于下发《四川省旅馆业治安管理实施办法（全文）》的通知”</td>
+            <td>四川省公安厅治安总队1处室</td>
+            <td>李一罗</td>
+            <td>admin</td>
+            <td>未发布</td>
+            <td>应接收人数（20）/ 已接收人数（20）</td>
+            <td>
+             <a href="">修改</a>
+             <a href="">删除</a>
+             <a href="">发布</a> 
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>2017-03-09 16:42:26</td>
+            <td>“2017年关于加强典当业管理的通知”</td>
+            <td>四川省公安厅治安总队1处室</td>
+            <td>李一罗</td>
+            <td>admin</td>
+            <td>未发布</td>
+            <td>应接收人数（20）/ 已接收人数（19）</td>
+            <td>
+             <a href="">修改</a>
+             <a href="">删除</a>
+             <a href="">发布</a>
+            </td>
+
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>2017-03-09 10:42:26</td>
+            <td>“2017年于加强机修业管理的通知”</td>
+            <td>四川省公安厅治安总队2处室</td>
+            <td>王大</td>
+            <td>admin</td>
+            <td>已发布</td>
+            <td>应接收人数（20）/ 已接收人数（19）</td>
+            <td>
+             <a href="">修改</a>
+             <a href="">删除</a>
+             <font color="#d0d0d0">发布</font>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>2017-02-09 15:42:26</td>
+            <td>“2017年关于加强民爆业管理的通知”</td>
+            <td>四川省公安厅治安总队3处室</td>
+            <td>周飞</td>
+            <td>admin</td>
+            <td>已发布</td>
+            <td>应接收人数（20）/ 已接收人数（19）</td>
+            <td>
+             <a href="">修改</a>
+             <a href="">删除</a>
+             <font color="#d0d0d0">发布</font>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>2017-02-09 14:42:26</td>
+            <td>“2017年关于加强易制毒业管理的通知”</td>
+            <td>四川省公安厅治安总队4处室</td>
+            <td>秦琴</td>
+            <td>admin</td>
+            <td>已发布</td>
+            <td>应接收人数（20）/ 已接收人数（19）</td>
+            <td>
+             <a href="">修改</a>
+             <a href="">删除</a>
+             <font color="#d0d0d0">发布</font>
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>2017-02-09 11:42:26</td>
+            <td>“2017年关于加强易制爆业管理的通知”</td>
+            <td>四川省公安厅治安总队5处室</td>
+            <td>罗云</td>
+            <td>admin</td>
+            <td>已发布</td>
+            <td>应接收人数（20）/ 已接收人数（19）</td>
+            <td>
+             <a href="">修改</a>
+             <a href="">删除</a>
+             <font color="#d0d0d0">发布</font>
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>2017-02-09 11:42:26</td>
+            <td>“2017年关于加强易制爆业管理的通知”</td>
+            <td>四川省公安厅治安总队5处室</td>
+            <td>吴之</td>
+            <td>admin</td>
+            <td>已发布</td>
+            <td>应接收人数（20）/ 已接收人数（19）</td>
+            <td>
+             <a href="">修改</a>
+             <a href="">删除</a>
+             <font color="#d0d0d0">发布</font>
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>2017-02-09 11:42:26</td>
+            <td>“2017年关于加强易制爆业管理的通知”</td>
+            <td>四川省公安厅治安总队5处室</td>
+            <td>向家</td>
+            <td>admin</td>
+            <td>已发布</td>
+            <td>应接收人数（20）/ 已接收人数（19）</td>
+            <td>
+             <a href="">修改</a>
+             <a href="">删除</a>
+             <font color="#d0d0d0">发布</font>
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>2017-02-09 11:42:26</td>
+            <td>“2017年关于加强易制爆业管理的通知”</td>
+            <td>四川省公安厅治安总队5处室</td>
+            <td>苟家</td>
+            <td>admin</td>
+            <td>已发布</td>
+            <td>应接收人数（20）/ 已接收人数（19）</td>
+            <td>
+             <a href="">修改</a>
+             <a href="">删除</a>
+             <font color="#d0d0d0">发布</font>
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>2017-02-09 11:42:26</td>
+            <td>“2017年关于加强易制爆业管理的通知”</td>
+            <td>四川省公安厅治安总队5处室</td>
+            <td>陈刚</td>
+            <td>admin</td>
+            <td>已发布</td>
+            <td>应接收人数（20）/ 已接收人数（19）</td>
+            <td>
+             <a href="">修改</a>
+             <a href="">删除</a>
+             <font color="#d0d0d0">发布</font>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+<div id="a010" style="display:none">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table2">
+        <tbody>
+          <tr class="lsbg">
+            <td><b>序号</b></td>
+            <td width=150px;><b>发布时间</b></td>
+            <td width=300px;><b>公告主题</b></td>
+            <td width=140px;><b>发布部门</b></td>
+            <td><b>发布人姓名</b></td>
+            <td><b>发布账号</b></td>
+            <td><b>发布状态</b></td>
+            <td width=150px;><b>本公告短信接收情况</b></td>
+            <td><b>操作</b></td>
+          </tr>
+
+          <tr onclick="tzggxx();">
+            <td>1</td>
+            <td>2017-03-09 14:42:26</td>
+            <td>“关于下发《四川省旅馆业治安管理实施办法（全文）》的通知”</td>
+            <td>四川省公安厅治安总队1处室</td>
+            <td>李一罗</td>
+            <td>admin</td>
+            <td>未发布</td>
+            <td>应接收人数（20）/ 已接收人数（20）</td>
+            <td>
+             <a href="">修改</a>
+             <a href="">删除</a>
+             <a href="">发布</a> 
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>2017-03-09 16:42:26</td>
+            <td>“2017年关于加强典当业管理的通知”</td>
+            <td>四川省公安厅治安总队1处室</td>
+            <td>李一罗</td>
+            <td>admin</td>
+            <td>未发布</td>
+            <td>应接收人数（20）/ 已接收人数（19）</td>
+            <td>
+             <a href="">修改</a>
+             <a href="">删除</a>
+             <a href="">发布</a>
+            </td>
+
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>2017-03-09 10:42:26</td>
+            <td>“2017年于加强机修业管理的通知”</td>
+            <td>四川省公安厅治安总队1处室</td>
+            <td>李一罗</td>
+            <td>admin</td>
+            <td>已发布</td>
+            <td>应接收人数（20）/ 已接收人数（19）</td>
+            <td>
+             <a href="">修改</a>
+             <a href="">删除</a>
+             <font color="#d0d0d0">发布</font>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>2017-02-09 15:42:26</td>
+            <td>“2017年关于加强民爆业管理的通知”</td>
+            <td>四川省公安厅治安总队1处室</td>
+            <td>李一罗</td>
+            <td>admin</td>
+            <td>已发布</td>
+            <td>应接收人数（20）/ 已接收人数（19）</td>
+            <td>
+             <a href="">修改</a>
+             <a href="">删除</a>
+             <font color="#d0d0d0">发布</font>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>2017-02-09 14:42:26</td>
+            <td>“2017年关于加强易制毒业管理的通知”</td>
+            <td>四川省公安厅治安总队1处室</td>
+            <td>李一罗</td>
+            <td>admin</td>
+            <td>已发布</td>
+            <td>应接收人数（20）/ 已接收人数（19）</td>
+            <td>
+             <a href="">修改</a>
+             <a href="">删除</a>
+             <font color="#d0d0d0">发布</font>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+
+
+
+
+
+<div class="fy">
+<div class="wenzi">显示第1到10条记录，总共50条记录 每页显示10条记录</div>
+<div class="ym">
+<div class="syy"></div>
+<div class="dqy">1</div>
+<div class="y">2</div>
+<div class="y">3</div>
+<div class="y">4</div>
+<div class="y">5</div>
+<div class="y">...</div>
+<div class="y">22</div>
+<div class="xyy"></div>
+</div>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+<script>
+function showHide(){
+  var a=document.getElementById("a009");
+  var b=document.getElementById("a010");
+      a.style.display="none";
+      b.style.display="block";
+}
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

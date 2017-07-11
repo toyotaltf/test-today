@@ -1,0 +1,380 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>短信日志列表</title>
+<link rel="stylesheet" type="text/css" href="../css/css.css">
+</head>
+
+<body>
+
+<div class="boxs">
+ <div class="ym2">
+  <div class="top">欢迎您，管理员 所属机构：治安总队</div>
+   <div class="top_gn">
+    <div class="tuichu"><a href="#">退出</a> </div>
+    <div class="xiaoxi"> <a href="../tzgg/bjyj_tzgg0.html">消息(10)</a> </div>
+   </div>
+ </div>
+
+
+<div class="bq">
+<div class="sy">
+<a href="../index.html">首页</a>
+</div>
+
+<div class="bq2_select">
+<a href="dxrzlist.html">系统管理_</a>
+
+<div></div>
+</div>
+</div>
+<div class="cxbox">
+<div class="boxleft">
+<div class="boxtb">
+<div class="hy16">消息平台</div>
+
+</div>
+</div>
+<div class="boxright">
+<div class="boxcx">
+<div class="text">
+
+
+
+
+
+<div class="bq_mr"><a href="../dxgl/mbpzlist.html">模板配置</a></div>
+<div class="bq_mr"><a href="../tzgg/xxlist.html">公告管理</a></div>
+<div class="bq_dq"><a href="../dxgl/dxrzlist.html">短信日志</a></div>
+</div>
+
+<div class="boxcx2" style=" z-index:9">
+<ul>
+<li><div class="text4">日志行业来源</div>
+<select >
+  <option selected="selected">&nbsp;&nbsp;--请选择--&nbsp;&nbsp;&nbsp;</option>
+  <option >&nbsp;&nbsp;&nbsp;&nbsp;所有&nbsp;&nbsp;&nbsp;</option>
+  <option >&nbsp;&nbsp;&nbsp;旅馆业&nbsp;&nbsp;</option>
+    <option>&nbsp;&nbsp;&nbsp;典当业&nbsp;&nbsp;</option>
+      <option>&nbsp;&nbsp;&nbsp;机修业&nbsp;&nbsp;</option>
+        <option>&nbsp;&nbsp;&nbsp;民爆业&nbsp;&nbsp;</option>
+          <option>&nbsp;&nbsp;&nbsp;散装汽油&nbsp;&nbsp;</option>
+</select></li>
+<li>
+                 <div class="text4">时间区间</div>
+                 <input type="datetime-local" style="width:140px;" value="2017-07-01T01:00">
+                 <div class="text4"> 至 </div>
+                 <input type="datetime-local" style="width:140px;" value="2017-07-04T01:00">
+</li>
+
+
+
+<li><div class="text4">关键字</div><input type="text"  style="width:150px;" placeholder="在逃"></li>
+<li>
+
+
+
+<input type="submit" value="查询" onclick="showHide()">
+<input type="reset" value="清除"></li>
+</ul>
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+
+<div class="bt"><span>短信日志列表</span></div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table2" display:none; id="a005">
+  <tbody>
+
+    <tr class="lsbg">
+      <td>日志ID</td>
+      <td>短信发送日期</td>
+      <td>日志类型</td>
+      <td>日志行业来源</td>
+      <td>日志来源地址</td>
+      <td>报警管辖归属</td>
+
+    </tr>
+
+    <tr onclick="dxrzxx();">
+      <td>00001</td>
+      <td>2017-07-04 14:32:25</td>
+      <td>在逃比对预警</td>
+      <td>旅馆业社会信息采集系统</td>
+      <td>四川省成都市武侯区成科西路1号</td>
+      <td>西城派出所</td>
+      
+
+    </tr>
+    <tr>
+      <td>00002</td>
+      <td>2017-07-03 14:32:25</td>
+      <td>重点人员预警</td>
+      <td>机修业社会信息采集系统</td>
+      <td>四川省成都市武侯区成科西路1号</td>
+      <td>东城派出所</td>
+      
+    </tr>
+    <tr>
+      <td>00003</td>
+      <td>2017-07-02 14:32:25</td>
+      <td>在逃比对预警</td>
+      <td>典当业社会信息采集系统</td>
+      <td>四川省成都市武侯区成科西路1号</td>
+      <td>南城派出所</td>
+      
+    </tr>
+    <tr>
+      <td>00004</td>
+      <td>2017-07-01 14:32:25</td>
+      <td>重点人员预警</td>
+      <td>民爆业社会信息采集系统</td>
+      <td>四川省成都市武侯区成科西路1号</td>
+      <td>北城派出所</td>
+      
+    </tr>
+    <tr>
+      <td>00005</td>
+      <td>2017-07-04 14:32:25</td>
+      <td>重点人员预警</td>
+      <td>寄递业社会信息采集系统</td>
+      <td>四川省成都市武侯区成科西路1号</td>
+      <td>西城派出所</td>
+
+    </tr>
+    <tr>
+      <td>00006</td>
+      <td>2017-07-04 14:32:25</td>
+      <td>在逃比对预警</td>
+      <td>旅馆业社会信息采集系统</td>
+      <td>四川省成都市武侯区成科西路1号</td>
+      <td>西城派出所</td>
+    </tr>
+    <tr>
+      <td>00007</td>
+      <td>2017-07-04 14:32:25</td>
+      <td>重点人员预警</td>
+      <td>保安监管业社会信息采集系统</td>
+      <td>四川省成都市武侯区成科西路1号</td>
+      <td>西城派出所</td>
+    </tr>
+    <tr>
+      <td>00008</td>
+      <td>2017-07-04 14:32:25</td>
+      <td>在逃比对预警</td>
+      <td>民爆业社会信息采集系统</td>
+      <td>四川省成都市武侯区成科西路1号</td>
+      <td>西城派出所</td>
+    </tr>
+    <tr>
+      <td>00009</td>
+      <td>2017-07-04 14:32:25</td>
+      <td>重点人员预警</td>
+      <td>机修业社会信息采集系统</td>
+      <td>四川省成都市武侯区成科西路1号</td>
+      <td>西城派出所</td>
+    </tr>
+    <tr>
+      <td>00010</td>
+      <td>2017-07-04 14:32:25</td>
+      <td>在逃比对预警</td>
+      <td>典当业社会信息采集系统</td>
+      <td>四川省成都市武侯区成科西路1号</td>
+      <td>西城派出所</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+<div id="a006" style="display:none">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table2" >
+  <tbody>
+
+    <tr class="lsbg">
+      <td>日志ID</td>
+      <td>短信发送日期</td>
+      <td>日志类型</td>
+      <td>日志行业来源</td>
+      <td>日志来源地址</td>
+      <td>报警管辖归属</td>
+
+    </tr>
+
+    <tr onclick="dxrzxx();">
+      <td>00001</td>
+      <td>2017-07-04 14:32:25</td>
+      <td>在逃比对预警</td>
+      <td>旅馆业社会信息采集系统</td>
+      <td>四川省成都市武侯区成科西路1号</td>
+      <td>西城派出所</td>
+      
+
+    </tr>
+    <tr>
+      <td>00002</td>
+      <td>2017-07-03 14:32:25</td>
+      <td>在逃人员预警</td>
+      <td>机修业社会信息采集系统</td>
+      <td>四川省成都市武侯区成科西路1号</td>
+      <td>东城派出所</td>
+      
+    </tr>
+    <tr>
+      <td>00003</td>
+      <td>2017-07-02 14:32:25</td>
+      <td>在逃比对预警</td>
+      <td>典当业社会信息采集系统</td>
+      <td>四川省成都市武侯区成科西路1号</td>
+      <td>南城派出所</td>
+      
+    </tr>
+    <tr>
+      <td>00004</td>
+      <td>2017-07-01 14:32:25</td>
+      <td>在逃人员预警</td>
+      <td>民爆业社会信息采集系统</td>
+      <td>四川省成都市金牛区西浦路123 号</td>
+      <td>北城派出所</td>
+      
+    </tr>
+    <tr>
+      <td>00005</td>
+      <td>2017-07-04 14:32:25</td>
+      <td>在逃比对预警</td>
+      <td>易制毒业社会信息采集系统</td>
+      <td>四川省成都市成华区师大路177号</td>
+      <td>西城派出所</td>
+
+    </tr>
+    <tr>
+      <td>00006</td>
+      <td>2017-07-04 14:32:25</td>
+      <td>在逃比对预警</td>
+      <td>保安业社会信息采集系统</td>
+      <td>四川省成都市锦江区音乐大道55号</td>
+      <td>西城派出所</td>
+    </tr>
+    <tr>
+      <td>00007</td>
+      <td>2017-07-04 14:32:25</td>
+      <td>在逃比对预警</td>
+      <td>寄递业社会信息采集系统</td>
+      <td>四川省成都市青羊区金沙大道66号</td>
+      <td>西城派出所</td>
+    </tr>
+    <tr>
+      <td>00008</td>
+      <td>2017-07-04 14:32:25</td>
+      <td>在逃比对预警</td>
+      <td>旅馆业社会信息采集系统</td>
+      <td>四川省成都市武侯区武侯大道123号</td>
+      <td>西城派出所</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+
+<div class="fy">
+<div class="wenzi">显示第1到10条记录，总共50条记录 每页显示10条记录</div>
+<div class="ym">
+<div class="syy"></div>
+<div class="dqy">1</div>
+<div class="y">2</div>
+<div class="y">3</div>
+<div class="y">4</div>
+<div class="y">5</div>
+<div class="y">...</div>
+<div class="y">22</div>
+<div class="xyy"></div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+<script type="text/javascript">
+
+function dxrzxx(){
+location.href="dxrz.html";
+}
+
+function showHide(){
+    var a=document.getElementById("a005");
+    var b=document.getElementById("a006");
+        a.style.display="none";
+        b.style.display="block";
+
+
+}
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

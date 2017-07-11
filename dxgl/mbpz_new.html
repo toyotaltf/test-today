@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>模板配置</title>
+    <link rel="stylesheet" type="text/css" href="../css/css.css">
+</head>
+
+<body>
+    <div class="boxs">
+        <div class="ym2">
+            <div class="top">
+                欢迎您，管理员 所属机构：治安总队
+            </div>
+            <div class="top_gn">
+                <div class="tuichu">
+                    <a href="#">退出</a> </div>
+                <div class="xiaoxi">
+                    <a href="../bjyj/bjyj_tzgg0.html">消息(10)</a> </div>
+            </div>
+        </div>
+        <div class="bq">
+            <div class="sy">
+                <a href="../index.html">首页</a>
+            </div>
+            <div class="bq2_select">
+                <a href="mbpzlist.html">模板配置</a>
+                <div></div>
+            </div>
+        </div>
+
+
+
+
+        <div class="bt"><span>模板定义</span></div>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table2">
+            <tbody>
+                <tr>
+                    <td width="12%" class="lsbg">模板大类</td>
+                    
+                       
+                            <td>预警报警类</td>
+                       
+                    
+                    <td width="12%" class="lsbg">模板细类</td>
+                      <td>在逃人员报警类</td>
+                   
+                    <td width="12%" class="lsbg">模板名称</td>
+                    <td>
+                        在逃人员报警a
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lsbg">模板备注</td>
+                    <td colspan="5" class="left">
+                        本模板主要用于通知民警旅馆业在逃人员报警预警的消息。
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+        <div class="bt">模板编辑</div>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table2">
+            <tbody>
+                <tr>
+                    <td width="12%" rowspan="2" class="lsbg">字段分类</td>
+                    <td class="left">
+
+                        
+                        <input type="radio" name="field" id="field" onclick="showFiled();" checked>时间类
+                        <input type="radio" name="field" id="fieldA" onclick="showFiled();">事件类
+                        <input type="radio" name="field" id="fieldB" onclick="showFiled();">
+                        地点类
+                        <input type="radio" name="field" id="fieldC" onclick="showFiled();">
+                        人物
+                        <input type="radio" name="field" id="fieldD" onclick="showFiled();">证件号码
+                        
+
+                         </td>
+
+                </tr>
+                <tr>
+                    <td class="left" style="display:block;" id="field0">
+              <span><a href="#" onclick="addFiled(this.innerHTML);">[**年**月**日]</a> </span>&nbsp;&nbsp;&nbsp;
+              <span><a href="#" onclick="addFiled(this.innerHTML);">[*月*日]</a> <span>&nbsp;&nbsp;&nbsp;
+              <span><a href="#" onclick="addFiled(this.innerHTML);">**年**月**日**:**:**</a></span>&nbsp;&nbsp;&nbsp;
+              <span><a href="#" onclick="addFiled(this.innerHTML);">[*年]</a></span>&nbsp;&nbsp;&nbsp;
+              
+              
+
+
+                    <td class="left" style="display:none;" id="field1">
+                    <a href="#" onclick="addFiled(this.innerHTML);">[报警类型]</a> &nbsp;&nbsp;&nbsp; </td>
+
+
+                    <td class="left" style="display:none;" id="field2">
+                    <a href="#" onclick="addFiled(this.innerHTML);">[辖区]</a>
+                     <a href="#" onclick="addFiled(this.innerHTML);">[街道]</a>  </td>
+
+                    <td class="left" style="display:none;" id="field3">
+                    <a href="#" onclick="addFiled(this.innerHTML);">[民警姓名]</a> 
+                    <a href="#" onclick="addFiled(this.innerHTML);">[嫌疑人姓名]</a>  </td>
+
+                    <td class="left" style="display:none;" id="field4">
+                    <a href="#" onclick="addFiled(this.innerHTML);">[身份证号码]</a> 
+                    <a href="#" onclick="addFiled(this.innerHTML);">[驾驶证号码]</a>
+                     <a href="#" onclick="addFiled(this.innerHTML);">[护照号码]</a>  </td>
+                </tr>
+
+
+                <tr>
+                    <td class="lsbg">模板配置</td>
+                    <td class="left">
+                        <input type="text" style="width: 98%;word-break:break-all" id="template" onblur="addtemplateName(this.value);" placeholder="[民警姓名],你好,在[日期] 产生一条[报警类型],报警对象为[嫌疑人姓名],身份证号码:[**],你辖区,请及时处理.">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+        <div class="bt"><span>模板预览</span></div>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table2">
+            <tbody>
+                <tr>
+                    <td class="left">
+                        <div class="mbmc">模板名称</div>
+                        <div class="mbzw" id="templateName">[李警官],你好,在[2017年05月09日] 产生一条[在逃比对预警消息],报警对象为[王立],身份证号码:[512501199908128827],在你辖区,请及时处理.</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="anniu">
+            <input type="submit" value="保存"  onclick="liShowConfirm();">
+            <a href="../dxgl/mbpzlist0.html">
+                <input type="submit" value="取消关闭">
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script type="text/javascript">
+    //切换字段分类的单选按钮时，字段相应的切换
+    function showFiled() {
+        var radioName = document.getElementsByName("field");
+        var radioNum = radioName.length;
+        for (i = 0; i < radioNum; i++) {
+            if (radioName[i].checked) {
+                document.getElementById("field" + i).style.display = "";
+            } else {
+                document.getElementById("field" + i).style.display = "none";
+            }
+        }
+    }
+    //点击字段时将字段的值追加到模板配置和模板名称中
+    function addFiled(value) {
+        var template = document.getElementById("template").value;
+        document.getElementById("template").value = template + value;
+        document.getElementById("templateName").innerHTML = template + value;
+    }
+    //焦点离开模板配置时改变模板名称的值
+    function addtemplateName(value) {
+        document.getElementById("templateName").innerHTML = value;
+    }
+    </script>
+
+
+<script>
+  function liShowConfirm() {
+          alert("提交成功!");
+          }
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>数据权限管理</title>
+<link rel="stylesheet" type="text/css" href="../css/css.css">
+</head>
+
+<body>
+<div class="boxs">
+<div class="ym2">
+<div class="top">
+欢迎您，管理员 所属机构：治安总队
+</div>
+<div class="top_gn">
+<div class="tuichu">
+  <a href="#">退出</a> </div>
+<div class="xiaoxi">
+  <a href="bjyj_tzgg.html">消息(10)</a> </div>
+</div>
+</div>
+<div class="bq">
+<div class="sy">
+<a href="index.html">首页</a>
+</div>
+<div class="bq2">
+<a href="ywcx.html">业务查询</a><div></div>
+</div>
+<div class="bq2_select">
+<a href="sjqxgl.html">数据权限</a><div></div>
+</div>
+</div>
+<div class="cxbox">
+<div class="boxleft">
+<div class="boxtb">
+<div class="hy1" id="xtszDiv" onclick="showChild();">系统设置</div>
+<div class="hypic" id="ChildDiv" onMouseOut="hideChild();"  onMouseOver="showChild();">
+<ul>
+<li><div class="hy1">旅店业</div></li>
+<li><div class="hy2">机修业</div></li>
+<li><div class="hy3">寄递业</div></li>
+<li><div class="hy4">民爆终端</div></li>
+<li><div class="hy5">散装汽油</div></li>
+<li><div class="hy6">保安监管</div></li>
+<li><div class="hy7">烟花爆竹</div></li>
+<li><div class="hy8">流动人口</div></li>
+<li><div class="hy9">典当业</div></li>
+<li><div class="hy10">射钉枪管理</div></li>
+<li><div class="hy11">易制毒</div></li>
+<li><div class="hy12">易制爆</div></li>
+<li><div class="hy13">印章业</div></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="boxright">
+<div class="boxcx">
+<div class="text">
+<div class="bq_mr"><a href="xtgl.html">人员管理</a></div>
+<div class="bq_mr"><a href="zzjgxx.html">组织机构管理</a></div>
+<div class="bq_mr"><a href="jsgl.html">角色管理</a></div>
+<div class="bq_dq"><a href="sjqxgl.html">数据权限管理</a></div>
+<div class="bq_mr"><a href="mbpzlist.html">模板配置</a></div>
+<div class="bq_mr"><a href="xxlist.html">公告发布</a></div>
+<div class="bq_mr"><a href="dxrzlist.html">短信日志</a></div>
+</div>
+<div class="boxcx2" style=" z-index:9">
+<ul>
+<li>
+  <div class="text4">角色名称</div><input type="text" style="width:150px;"></li>
+<li>
+  <div class="text4">岗位名称</div><input type="text"  style="width:150px;"></li>
+<li><select>
+  <option>--选择条件--</option>
+  <option>治安管辖单位&nbsp;&nbsp; </option>
+  <option>身份证号码</option>
+</select><input type="submit" value="查询"><input type="reset" value="清除"></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="bt"><span>数据权限信息</span></div>
+<div class="xtgl">
+<div class="tree2">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table5">
+    <tbody>
+      <tr>
+        <td width="50%"  class="lsbg">角色</td>
+        <td width="50%" class="hsbg">岗位</td>
+      </tr>
+      <tr>
+        <td colspan="2" valign="top"  class="list">
+        <ul>
+        <li class="select">总队领导</li>
+        <li>支队领导</li>
+        <li>办案民警</li>
+        </ul>
+        
+        </td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+<div class="xtbox">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table2">
+  <tbody>
+    <tr class="lsbg">
+      <td>&nbsp;</td>
+      <td>省级</td>
+      <td>市级</td>
+      <td>县级</td>
+      <td>本单位</td>
+      <td>自定义数据范围</td>
+      </tr>
+    <tr>
+      <td class="hsbg">旅店业</td>
+      <td><input type="checkbox" name="checkbox" id="checkbox"></td>
+      <td><input type="checkbox" name="checkbox" id="checkbox"></td>
+      <td><input type="checkbox" name="checkbox" id="checkbox"></td>
+      <td><input type="checkbox" name="checkbox" id="checkbox"></td>
+      <td>&nbsp;</td>
+      </tr>
+    <tr>
+      <td class="hsbg">典当业</td>
+      <td><input type="checkbox" name="checkbox2" id="checkbox2"></td>
+      <td><input type="checkbox" name="checkbox2" id="checkbox2"></td>
+      <td><input type="checkbox" name="checkbox2" id="checkbox2"></td>
+      <td><input type="checkbox" name="checkbox2" id="checkbox2"></td>
+      <td>&nbsp;</td>
+      </tr>
+    <tr>
+      <td class="hsbg">保安监管</td>
+      <td><input type="checkbox" name="checkbox3" id="checkbox3"></td>
+      <td><input type="checkbox" name="checkbox3" id="checkbox3"></td>
+      <td><input type="checkbox" name="checkbox3" id="checkbox3"></td>
+      <td><input type="checkbox" name="checkbox3" id="checkbox3"></td>
+      <td>&nbsp;</td>
+      </tr>
+    <tr>
+      <td class="hsbg">机动车</td>
+      <td><input type="checkbox" name="checkbox4" id="checkbox4"></td>
+      <td><input type="checkbox" name="checkbox4" id="checkbox4"></td>
+      <td><input type="checkbox" name="checkbox4" id="checkbox4"></td>
+      <td><input type="checkbox" name="checkbox4" id="checkbox4"></td>
+      <td>&nbsp;</td>
+      </tr>
+    <tr>
+      <td class="hsbg">物流寄递</td>
+      <td><input type="checkbox" name="checkbox5" id="checkbox5"></td>
+      <td><input type="checkbox" name="checkbox5" id="checkbox5"></td>
+      <td><input type="checkbox" name="checkbox5" id="checkbox5"></td>
+      <td><input type="checkbox" name="checkbox5" id="checkbox5"></td>
+      <td>&nbsp;</td>
+      </tr>
+    <tr>
+      <td class="hsbg">民用爆炸</td>
+      <td><input type="checkbox" name="checkbox6" id="checkbox6"></td>
+      <td><input type="checkbox" name="checkbox6" id="checkbox6"></td>
+      <td><input type="checkbox" name="checkbox6" id="checkbox6"></td>
+      <td><input type="checkbox" name="checkbox6" id="checkbox6"></td>
+      <td>&nbsp;</td>
+      </tr>
+    <tr>
+      <td class="hsbg">散装加油</td>
+      <td><input type="checkbox" name="checkbox7" id="checkbox7"></td>
+      <td><input type="checkbox" name="checkbox7" id="checkbox7"></td>
+      <td><input type="checkbox" name="checkbox7" id="checkbox7"></td>
+      <td><input type="checkbox" name="checkbox7" id="checkbox7"></td>
+      <td>&nbsp;</td>
+      </tr>
+    <tr>
+      <td class="hsbg">流动人口</td>
+      <td><input type="checkbox" name="checkbox8" id="checkbox8"></td>
+      <td><input type="checkbox" name="checkbox8" id="checkbox8"></td>
+      <td><input type="checkbox" name="checkbox8" id="checkbox8"></td>
+      <td><input type="checkbox" name="checkbox8" id="checkbox8"></td>
+      <td>&nbsp;</td>
+      </tr>
+    <tr>
+      <td class="hsbg">射钉枪</td>
+      <td><input type="checkbox" name="checkbox9" id="checkbox9"></td>
+      <td><input type="checkbox" name="checkbox9" id="checkbox9"></td>
+      <td><input type="checkbox" name="checkbox9" id="checkbox9"></td>
+      <td><input type="checkbox" name="checkbox9" id="checkbox9"></td>
+      <td>&nbsp;</td>
+      </tr>
+    <tr>
+      <td class="hsbg">易制爆化学品</td>
+      <td><input type="checkbox" name="checkbox10" id="checkbox10"></td>
+      <td><input type="checkbox" name="checkbox10" id="checkbox10"></td>
+      <td><input type="checkbox" name="checkbox10" id="checkbox10"></td>
+      <td><input type="checkbox" name="checkbox10" id="checkbox10"></td>
+      <td>&nbsp;</td>
+      </tr>
+    <tr>
+      <td class="hsbg">印章</td>
+      <td><input type="checkbox" name="checkbox11" id="checkbox11"></td>
+      <td><input type="checkbox" name="checkbox11" id="checkbox11"></td>
+      <td><input type="checkbox" name="checkbox11" id="checkbox11"></td>
+      <td><input type="checkbox" name="checkbox11" id="checkbox11"></td>
+      <td>&nbsp;</td>
+      </tr>
+  </tbody>
+</table>
+<div class="anniu">
+<input type="submit" value="提交"><input type="submit" value="返回">
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+<script type="text/javascript">
+init();
+function init(){
+document.getElementById("ChildDiv").style.display="none";
+}
+function showChild(){
+  document.getElementById("ChildDiv").style.display="";
+}
+function hideChild(){
+document.getElementById("ChildDiv").style.display="none";
+}
+</script>
+</body>
+</html>

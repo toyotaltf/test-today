@@ -1,0 +1,212 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<link rel="stylesheet" type="text/css" href="css/css.css">
+<script type="text/javascript" src="jquery.js"></script>
+</head>
+
+<body>
+
+<div class="bg">
+
+<div class="ym">
+<div class="top">
+欢迎您，管理员 所属机构：治安总队
+</div>
+<div class="top_gn">
+<div class="tuichu">
+  <a href="#">退出</a> </div>
+<div class="xiaoxi">
+  <a href="./tzgg/bjyj_tzgg0.html">消息(10)</a> </div>
+</div>
+</div>
+<div class="dh">
+<div class="sousuo">
+
+
+<div class="xiala" onclick="showCity();">
+选择辖区
+<div class="box1" id="cityDiv" onMouseOut="hideChild();"  onMouseOver="showCity();">
+<ul>
+<li><input type="checkbox" name="checkCity" onclick="uncheckAll();">成都</li>
+<li><input type="checkbox" name="checkCity" onclick="uncheckAll();">绵阳</li>
+<li><input type="checkbox" name="checkCity" onclick="uncheckAll();">内江</li>
+<li><input type="checkbox" name="checkCity" onclick="uncheckAll();">乐山</li>
+<li><input type="checkbox" name="checkCity" onclick="uncheckAll();">自贡</li>
+<li><input type="checkbox" name="checkCity" onclick="uncheckAll();">泸州</li>
+<li><input type="checkbox" name="checkCity" onclick="uncheckAll();">德阳</li>
+<li><input type="checkbox" name="checkCity" onclick="uncheckAll();">广元</li>
+<li><input type="checkbox" name="checkCity" onclick="uncheckAll();">遂宁</li>
+<li><input type="checkbox" name="checkCity" onclick="uncheckAll();">眉山</li>
+<li><input type="checkbox" name="checkCity" onclick="uncheckAll();">宜宾</li>
+<li><input type="checkbox" name="checkCity" onclick="uncheckAll();">广安</li>
+<li><input type="checkbox" name="checkCity" onclick="uncheckAll();">达州</li>
+<li><input type="checkbox" name="checkCity" onclick="uncheckAll();">雅安</li>
+<li><input type="checkbox" name="checkCity" onclick="uncheckAll();">巴中</li>
+<li><input type="checkbox" name="checkCity" onclick="uncheckAll();">资阳</li>
+<li><input type="checkbox" name="checkCity" onclick="uncheckAll();">攀枝花</li>
+<li><input type="checkbox" name="checkCity" onclick="uncheckAll();">南充</li>
+<li><input type="checkbox" name="checkCity" onclick="uncheckAll();">凉山</li>
+<li><input type="checkbox" name="checkCity" onclick="uncheckAll();">甘孜</li>
+<li><input type="checkbox" name="checkCity" onclick="uncheckAll();">阿坝</li>
+<li><input type="checkbox" name="checkCityAll" id="checkCityAll" onclick="checkAll();">全选</li>
+</ul>
+</div>
+</div>
+
+
+<div class="xiala" onclick="showLine();">选择行业
+<div class="box2" id="lineDiv" onMouseOut="hideChild();"  onMouseOver="showLine();">
+<ul>
+<li><input type="checkbox" name="checkLine" onclick="uncheckAll();">旅馆</li>
+<li><input type="checkbox" name="checkLine" onclick="uncheckAll();">机动车</li>
+<li><input type="checkbox" name="checkLine" onclick="uncheckAll();">物流</li>
+<li><input type="checkbox" name="checkLine" onclick="uncheckAll();">寄递</li>
+<li><input type="checkbox" name="checkLine" onclick="uncheckAll();">民用</li>
+<li><input type="checkbox" name="checkLine" onclick="uncheckAll();">爆炸</li>
+<li><input type="checkbox" name="checkLine" onclick="uncheckAll();">散装</li>
+<li><input type="checkbox" name="checkLine" onclick="uncheckAll();">加油</li>
+<li><input type="checkbox" name="checkLine" onclick="uncheckAll();">保安</li>
+<li><input type="checkbox" name="checkLine" onclick="uncheckAll();">监管</li>
+<li><input type="checkbox" name="checkLine" onclick="uncheckAll();">流动</li>
+<li><input type="checkbox" name="checkLine" onclick="uncheckAll();">人口</li>
+<li><input type="checkbox" name="checkLine" onclick="uncheckAll();">典当</li>
+<li><input type="checkbox" name="checkLine" onclick="uncheckAll();">射钉枪</li>
+<li><input type="checkbox" name="checkLine" onclick="uncheckAll();">易制毒</li>
+<li><input type="checkbox" name="checkLine" onclick="uncheckAll();">易制爆</li>
+<li><input type="checkbox" name="checkLine" onclick="uncheckAll();">印章</li>
+<li><input type="checkbox" name="checkLineAll" id="checkLineAll" onclick="checkAll();">全选</li>
+</ul>
+</div>
+</div>
+<input class="cx1" type="text" value="请输入关键字，例如 “一”" onfocus="this.value=''" >
+<a href="./qwjs/qwjs.html"><div class="cx2"></div></a>
+</div>
+<table border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td><a href="zhcx.html"><img src="images/tb5.png" width="150" height="157" alt=""/></a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="ywcx.html"><img src="images/tb4.png" width="150" height="157" alt=""/></a></td>
+      <td><a href="tjbb1.html"><img src="images/tb3.png" width="150" height="157" alt=""/></a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><a href="#"><img src="images/tb2.png" width="150" height="157" alt=""/></a></td>
+      <td><a href="xtgl.html"><img src="images/tb1.png" width="150" height="157" alt=""/></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+<div class="bottom">
+<div class="text1">
+上次登录IP：192.168.1.1   上次登录时间：2017-03-15 10：30
+</div>
+<div class="text2">
+本次登录IP：192.168.1.1   日期：2017-03-15 星期四 10：30
+</div>
+<div class="text3">
+软件版本号：v1.0
+</div>
+</div>
+
+</div>
+
+
+
+
+
+<script type="text/javascript">
+init();
+function init(){
+document.getElementById("cityDiv").style.display="none";
+document.getElementById("lineDiv").style.display="none";
+}
+function showCity(){
+  document.getElementById("cityDiv").style.display="";
+}
+function showLine(){
+  document.getElementById("lineDiv").style.display="";
+}
+function hideChild(){
+document.getElementById("cityDiv").style.display="none";
+document.getElementById("lineDiv").style.display="none";
+}
+
+
+//全选和取消全选
+function checkAll(){
+ var checkCtiyList = document.getElementsByName ("checkCity");
+ var checkLineList = document.getElementsByName ("checkLine");
+ if(checkCtiyList.length!=0){
+	if(document.getElementById("checkCityAll").checked){
+	   for(var i=0;i<checkCtiyList.length;i++){
+	      checkCtiyList[i].checked = 1;
+	   } 
+	 }else{
+	  for(var j=0;j<checkCtiyList.length;j++){
+	     checkCtiyList[j].checked = 0;
+	  }
+	 }
+ }else if(checkLineList.length!=0){
+ if(document.getElementById("checkLineAll").checked){
+	   for(var i=0;i<checkLineList.length;i++){
+	      checkLineList[i].checked = 1;
+	   } 
+	 }else{
+	  for(var j=0;j<checkLineList.length;j++){
+	     checkLineList[j].checked = 0;
+	  }
+	 }
+ }  
+}
+
+
+function uncheckAll(){
+ var checkCtiyList = document.getElementsByName ("checkCity");
+  var checkLineList = document.getElementsByName ("checkLine");
+ if(checkCtiyList.length!=0){
+  for(var i=0;i<checkCtiyList.length;i++){
+    if(checkCtiyList[i].checked){
+      document.getElementById("checkCityAll").checked=1;
+    }else{
+      document.getElementById("checkCityAll").checked=0;
+      break;
+    }
+   } 
+ }else if(checkLineList.length!=0){
+ for(var i=0;i<checkLineList.length;i++){
+    if(checkLineList[i].checked){
+      document.getElementById("checkLineAll").checked=1;
+    }else{
+     document.getElementById("checkLineAll").checked=0;
+     break;
+    }
+   }
+ }
+}
+</script>
+
+
+
+
+
+</body>
+</html>
